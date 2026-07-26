@@ -1,0 +1,163 @@
+/* ================================
+   FOOTER
+================================ */
+
+.site-footer {
+  background-color: #222222;
+  color: #ffffff;
+  padding: 75px 0 0;
+}
+
+
+/* ================================
+   COMPANY INFORMATION
+================================ */
+
+.footer-logo {
+  margin-bottom: 20px;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  color: #ffffff;
+}
+
+.footer-description {
+  max-width: 360px;
+  margin-bottom: 20px;
+
+  color: #bdbdbd;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.footer-tagline {
+  color: #f4a300;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+
+/* ================================
+   FOOTER HEADINGS
+================================ */
+
+.footer-heading {
+  margin-bottom: 25px;
+
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* ================================
+   QUICK LINKS
+================================ */
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.footer-links a {
+  width: fit-content;
+
+  color: #bdbdbd;
+  text-decoration: none;
+
+  font-size: 0.95rem;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #f4a300;
+  transform: translateX(5px);
+}
+
+
+/* ================================
+   CONTACT INFORMATION
+================================ */
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.footer-contact p {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+
+  margin: 0;
+
+  color: #bdbdbd;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-contact i {
+  width: 18px;
+  margin-top: 4px;
+
+  color: #f4a300;
+  font-size: 1rem;
+}
+
+
+/* ================================
+   FOOTER BOTTOM
+================================ */
+
+.footer-bottom {
+  margin-top: 60px;
+  padding: 22px 0;
+
+  border-top: 1px solid #3a3a3a;
+
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #888888;
+  font-size: 0.85rem;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+  .site-footer {
+    padding-top: 55px;
+  }
+
+  .footer-logo {
+    font-size: 1.6rem;
+  }
+
+  .footer-heading {
+    margin-bottom: 18px;
+  }
+
+  .footer-bottom {
+    margin-top: 45px;
+  }
+
+}

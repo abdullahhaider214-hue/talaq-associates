@@ -1,0 +1,88 @@
+.applications-section {
+  padding: 110px 0;
+  background-color: #f8f8f6;
+}
+
+.applications-heading {
+  margin-bottom: 65px;
+}
+
+.applications-heading h2 {
+  margin-top: 20px;
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 1.15;
+  font-weight: 700;
+  color: #222222;
+}
+
+.applications-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid #d8d8d5;
+}
+
+.application-item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  min-height: 95px;
+  padding: 20px 10px;
+  border-bottom: 1px solid #d8d8d5;
+}
+
+.application-item:nth-child(odd) {
+  border-right: 1px solid #d8d8d5;
+  padding-right: 40px;
+}
+
+.application-item:nth-child(even) {
+  padding-left: 40px;
+}
+
+.application-number {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #f4a300;
+  min-width: 25px;
+}
+
+.application-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+/* Hover Effect */
+
+.application-item {
+  transition: background-color 0.3s ease;
+}
+
+.application-item:hover {
+  background-color: #ffffff;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+  .applications-section {
+    padding: 75px 0;
+  }
+
+  .applications-heading {
+    margin-bottom: 40px;
+  }
+
+  .applications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .application-item:nth-child(odd) {
+    border-right: none;
+    padding-right: 10px;
+  }
+
+  .application-item:nth-child(even) {
+    padding-left: 10px;
+  }
+}
