@@ -1,6 +1,6 @@
 import './WhyChooseUs.css';
 
-import whyChooseImage from '../../assets/images/choose.jpg';
+import whyChooseImage from '../../assets/images/Home Page/choose.jpg';
 
 function WhyChooseUs() {
   const reasons = [

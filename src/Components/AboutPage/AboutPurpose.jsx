@@ -1,4 +1,4 @@
-import aboutImage from '../../assets/images/Aboutpic.jpeg';
+import aboutImage from '../../assets/images/About Page/Aboutpage.jpg';
 
 import './AboutPurpose.css';
 

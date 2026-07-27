@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import './FutureStatement.css';
 
-import futureConstructionImage from '../../assets/images/future-construction.jpg';
+import futureConstructionImage from '../../assets/images/Home Page/future-construction.jpg';
 
 function FutureStatement() {
   return (

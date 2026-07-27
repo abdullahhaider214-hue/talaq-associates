@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../../assets/images/talaq-logo.jpeg';
+import logo from '../../assets/images/Home Page/talaq-logo.jpeg';
 
 import './Navbar.css';
 
