@@ -1,9 +1,9 @@
-import Hero from '../Components/Hero';
-import AboutIntro from '../Components/AboutIntro';
-import ServicesPreview from '../Components/ServicesPreview';
-import WhyChooseUs from '../Components/WhyChooseUs';
-import FutureStatement from '../Components/FutureStatement';
-import Applications from '../Components/Applications';
+import Hero from '../Components/HomePage/Hero';
+import AboutIntro from '../Components/HomePage/AboutHome';
+import ServicesPreview from '../Components/HomePage/ServicesPreview';
+import WhyChooseUs from '../Components/HomePage/WhyChooseUs';
+import FutureStatement from '../Components/HomePage/FutureStatement';
+import Applications from '../Components/HomePage/Applications';
 
 function Home() {
   return (

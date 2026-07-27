@@ -1,12 +1,20 @@
+import AboutIntro from '../Components/AboutPage/AboutIntro';
+import AboutPurpose from '../Components/AboutPage/AboutPurpose';
+import AboutApproach from '../Components/AboutPage/AboutApproach';
+import AboutClosing from '../Components/AboutPage/AboutClosing';
+
 function About() {
   return (
-    <main>
-      <h1>About Talaq Associates</h1>
+    <main className="about-page">
 
-      <p>
-        Talaq Associates provides lightweight concrete products and
-        construction solutions for modern building applications.
-      </p>
+      <AboutIntro />
+
+      <AboutPurpose />
+
+      <AboutApproach />
+
+      <AboutClosing />
+
     </main>
   );
 }

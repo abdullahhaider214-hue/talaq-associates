@@ -1,0 +1,65 @@
+/* ================================
+   ABOUT CLOSING
+================================ */
+
+.about-closing-section {
+  padding: 100px 0;
+
+  background-color: #ffffff;
+}
+
+
+.about-closing-content {
+  max-width: 850px;
+}
+
+
+/* Heading */
+
+.about-closing-content h2 {
+  margin: 0 0 25px;
+
+  color: #222222;
+
+  font-size: clamp(36px, 5vw, 62px);
+  line-height: 1.1;
+}
+
+.about-closing-content h2 span {
+  color: #f4a300;
+}
+
+
+/* Text */
+
+.about-closing-content p {
+  max-width: 600px;
+
+  margin: 0;
+
+  color: #666666;
+
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 767px) {
+
+  .about-closing-section {
+    padding: 60px 0;
+  }
+
+  .about-closing-content h2 {
+    font-size: 38px;
+  }
+
+  .about-closing-content p {
+    font-size: 16px;
+  }
+
+}

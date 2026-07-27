@@ -1,0 +1,149 @@
+/* ================================
+   ABOUT APPROACH
+================================ */
+
+.about-approach-section {
+  padding: 90px 0;
+
+  background-color: #f8f8f6;
+}
+
+
+/* Heading */
+
+.about-approach-heading {
+  margin-bottom: 55px;
+}
+
+.about-approach-heading h2 {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: #222222;
+
+  font-size: clamp(36px, 4vw, 54px);
+  line-height: 1.1;
+}
+
+.about-approach-heading h2 span {
+  color: #f4a300;
+}
+
+
+/* Approach Grid */
+
+.approach-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 50px;
+}
+
+
+/* Individual Item */
+
+.approach-item {
+  padding-top: 22px;
+
+  border-top: 2px solid #f4a300;
+}
+
+
+/* Number */
+
+.approach-number {
+  display: block;
+
+  margin-bottom: 28px;
+
+  color: #f4a300;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+}
+
+
+/* Title */
+
+.approach-item h3 {
+  margin: 0 0 15px;
+
+  color: #222222;
+
+  font-size: 24px;
+}
+
+
+/* Description */
+
+.approach-item p {
+  max-width: 300px;
+
+  margin: 0;
+
+  color: #666666;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 991px) {
+
+  .approach-grid {
+    gap: 30px;
+  }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 767px) {
+
+  .about-approach-section {
+    padding: 60px 0;
+  }
+
+  .about-approach-heading {
+    margin-bottom: 40px;
+  }
+
+  .about-approach-heading h2 {
+    font-size: 38px;
+  }
+
+  .approach-grid {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .approach-item p {
+    max-width: 100%;
+  }
+
+}
+
+
+
+.about-label {
+  margin: 0 0 18px;
+
+  color: #f4a300;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}

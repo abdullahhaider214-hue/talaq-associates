@@ -1,11 +1,13 @@
 import { NavLink } from 'react-router-dom';
+import './ServicesPreview.css';
 
-import foamingAgentsImage from '../assets/images/services/foaming-agents.jpg';
-import clcBlocksImage from '../assets/images/services/clc-blocks.jpg';
-import clcScreedImage from '../assets/images/services/clc-screed.jpg';
-import lightweightConcreteImage from '../assets/images/services/lightweight-concrete.jpg';
-import technicalSupportImage from '../assets/images/services/technical-support.jpg';
-import qualityConsultationImage from '../assets/images/services/quality-consultation.jpg';
+
+import foamingAgentsImage from '../../assets/images/services/foaming-agents.jpg';
+import clcBlocksImage from '../../assets/images/services/clc-blocks.jpg';
+import clcScreedImage from '../../assets/images/services/clc-screed.jpg';
+import lightweightConcreteImage from '../../assets/images/services/lightweight-concrete.jpg';
+import technicalSupportImage from '../../assets/images/services/technical-support.jpg';
+import qualityConsultationImage from '../../assets/images/services/quality-consultation.jpg';
 
 function ServicesPreview() {
   const services = [

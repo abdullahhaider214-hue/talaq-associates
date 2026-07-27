@@ -1,6 +1,8 @@
-import aboutImage from '../assets/images/Aboutpic.jpeg';
+import aboutImage from '../../assets/images/Aboutpic.jpeg';
+import './AboutHome.css';
 
-function AboutIntro() {
+
+function AboutHome() {
   return (
     <section className="about-intro py-5">
       <div className="container">
@@ -60,4 +62,4 @@ function AboutIntro() {
   );
 }
 
-export default AboutIntro;
+export default AboutHome;

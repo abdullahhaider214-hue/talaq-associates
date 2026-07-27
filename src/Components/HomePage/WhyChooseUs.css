@@ -1,0 +1,46 @@
+.why-choose-us {
+  background-color: #ffffff;
+}
+
+.why-choose-image-wrapper {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.why-choose-image {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+}
+
+.reasons-list {
+  margin-top: 25px;
+}
+
+.reason-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.reason-item i {
+  color: #b8860b;
+  font-size: 1.1rem;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+  .why-choose-image {
+    height: 300px;
+  }
+
+  .reason-item {
+    font-size: 1rem;
+  }
+}

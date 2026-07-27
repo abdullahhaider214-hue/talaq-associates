@@ -1,0 +1,36 @@
+.future-statement {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.future-statement-overlay {
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.future-statement-content {
+  max-width: 850px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.future-statement-content h2 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 20px 0;
+}
+
+.future-statement-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.future-statement-btn {
+  padding: 12px 28px;
+  font-weight: 600;
+}
