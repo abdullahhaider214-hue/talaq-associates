@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-
 import "./Footer.css";
 
 function Footer() {
@@ -9,7 +8,7 @@ function Footer() {
 
         <div className="row g-5">
 
-          {/* Company Information */}
+          {/* Company */}
 
           <div className="col-lg-4 col-md-6">
 
@@ -18,8 +17,9 @@ function Footer() {
             </h3>
 
             <p className="footer-description">
-              Complete solutions for the lightweight concrete and
-              construction industry.
+              Complete solutions for lightweight concrete, CLC technology,
+              and modern construction materials, delivering quality,
+              innovation, and reliability for every project.
             </p>
 
             <p className="footer-tagline">
@@ -39,25 +39,15 @@ function Footer() {
 
             <div className="footer-links">
 
-              <NavLink to="/">
-                Home
-              </NavLink>
+              <NavLink to="/">Home</NavLink>
 
-              <NavLink to="/about">
-                About Us
-              </NavLink>
+              <NavLink to="/about">About Us</NavLink>
 
-              <NavLink to="/products">
-                Products & Services
-              </NavLink>
+              <NavLink to="/products">Products & Services</NavLink>
 
-              <NavLink to="/projects">
-                Our Work
-              </NavLink>
+              <NavLink to="/projects">Our Work</NavLink>
 
-              <NavLink to="/contact">
-                Contact
-              </NavLink>
+              <NavLink to="/contact">Contact</NavLink>
 
             </div>
 
@@ -110,12 +100,12 @@ function Footer() {
           </div>
 
 
-          {/* Follow Us */}
+          {/* Connect With Us */}
 
           <div className="col-lg-3 col-md-6">
 
             <h4 className="footer-heading">
-              Follow Us
+              Connect With Us
             </h4>
 
             <div className="footer-social">
@@ -126,10 +116,21 @@ function Footer() {
                 rel="noopener noreferrer"
                 className="social-link"
               >
-
                 <i className="fab fa-facebook-f"></i>
 
                 <span>Facebook</span>
+
+              </a>
+
+              <a
+                href="https://wa.me/923226060503"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link whatsapp"
+              >
+                <i className="fab fa-whatsapp"></i>
+
+                <span>WhatsApp</span>
 
               </a>
 
@@ -140,13 +141,11 @@ function Footer() {
         </div>
 
 
-        {/* Footer Bottom */}
-
         <div className="footer-bottom">
 
           <p>
-            © {new Date().getFullYear()} Talaq Associates. All rights
-            reserved.
+            © {new Date().getFullYear()} Talaq Associates.
+            All Rights Reserved.
           </p>
 
         </div>
