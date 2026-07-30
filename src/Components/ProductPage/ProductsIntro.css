@@ -1,0 +1,98 @@
+/* ===============================
+   PRODUCTS INTRO
+================================ */
+
+.products-intro {
+  padding: 90px 0 70px;
+
+  background: #ffffff;
+}
+
+.products-intro .container {
+  max-width: 900px;
+}
+
+/* Label */
+
+.products-label {
+  margin-bottom: 16px;
+
+  color: #f4a300;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+/* Heading */
+
+.products-intro h1 {
+  margin-bottom: 24px;
+
+  color: #222;
+
+  font-size: clamp(40px, 5vw, 64px);
+
+  line-height: 1.1;
+
+  font-weight: 700;
+}
+
+.products-intro h1 span {
+  color: #f4a300;
+}
+
+/* Description */
+
+.products-description {
+  max-width: 700px;
+
+  color: #666;
+
+  font-size: 18px;
+
+  line-height: 1.8;
+}
+
+
+/* ===============================
+   TABLET
+================================ */
+
+@media (max-width:991px){
+
+.products-intro{
+padding:70px 0;
+}
+
+}
+
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media(max-width:767px){
+
+.products-intro{
+
+padding:60px 0;
+
+}
+
+.products-intro h1{
+
+font-size:42px;
+
+}
+
+.products-description{
+
+font-size:16px;
+
+}
+
+}

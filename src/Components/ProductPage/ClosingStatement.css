@@ -1,0 +1,103 @@
+/* ======================================
+   CLOSING STATEMENT
+====================================== */
+
+.closing-statement{
+
+    padding:110px 0;
+
+    background:#ffffff;
+
+}
+
+.closing-content{
+
+    max-width:850px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.closing-label{
+
+    margin-bottom:16px;
+
+    color:#f4a300;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.closing-content h2{
+
+    margin-bottom:24px;
+
+    color:#222;
+
+    font-size:clamp(36px,5vw,58px);
+
+    font-weight:700;
+
+    line-height:1.2;
+
+}
+
+.closing-content span{
+
+    color:#f4a300;
+
+}
+
+.closing-content p{
+
+    color:#666;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+}
+
+/* Tablet */
+
+@media(max-width:991px){
+
+.closing-statement{
+
+padding:80px 0;
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:767px){
+
+.closing-statement{
+
+padding:60px 0;
+
+}
+
+.closing-content h2{
+
+font-size:34px;
+
+}
+
+.closing-content p{
+
+font-size:16px;
+
+}
+
+}

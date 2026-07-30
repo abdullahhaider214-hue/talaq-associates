@@ -1,37 +1,44 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
 
-import './Footer.css';
-
+import "./Footer.css";
 
 function Footer() {
   return (
     <footer className="site-footer">
       <div className="container">
+
         <div className="row g-5">
 
           {/* Company Information */}
-          <div className="col-lg-5 col-md-6">
+
+          <div className="col-lg-4 col-md-6">
+
             <h3 className="footer-logo">
               Talaq Associates
             </h3>
 
             <p className="footer-description">
-              Complete solutions for the lightweight concrete and construction
-              industry.
+              Complete solutions for the lightweight concrete and
+              construction industry.
             </p>
 
             <p className="footer-tagline">
               Lighter. Stronger. Smarter.
             </p>
+
           </div>
 
+
           {/* Quick Links */}
-          <div className="col-lg-3 col-md-6">
+
+          <div className="col-lg-2 col-md-6">
+
             <h4 className="footer-heading">
               Quick Links
             </h4>
 
             <div className="footer-links">
+
               <NavLink to="/">
                 Home
               </NavLink>
@@ -47,48 +54,101 @@ function Footer() {
               <NavLink to="/projects">
                 Our Work
               </NavLink>
+
+              <NavLink to="/contact">
+                Contact
+              </NavLink>
+
             </div>
+
           </div>
 
+
           {/* Contact */}
-          <div className="col-lg-4 col-md-6">
+
+          <div className="col-lg-3 col-md-6">
+
             <h4 className="footer-heading">
               Contact
             </h4>
 
             <div className="footer-contact">
+
               <p>
                 <i className="fas fa-phone"></i>
+
                 <span>
                   0322-6060503
                   <br />
                   0306-5429035
                 </span>
+
               </p>
 
               <p>
+
                 <i className="fas fa-envelope"></i>
+
                 <span>
                   talaqassociate@gmail.com
                 </span>
+
               </p>
 
               <p>
+
                 <i className="fas fa-location-dot"></i>
+
                 <span>
                   Lahore, Pakistan
                 </span>
+
               </p>
+
             </div>
+
+          </div>
+
+
+          {/* Follow Us */}
+
+          <div className="col-lg-3 col-md-6">
+
+            <h4 className="footer-heading">
+              Follow Us
+            </h4>
+
+            <div className="footer-social">
+
+              <a
+                href="https://www.facebook.com/share/1GG6CM48Ye/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
+
+                <i className="fab fa-facebook-f"></i>
+
+                <span>Facebook</span>
+
+              </a>
+
+            </div>
+
           </div>
 
         </div>
 
-        {/* Copyright */}
+
+        {/* Footer Bottom */}
+
         <div className="footer-bottom">
+
           <p>
-            © {new Date().getFullYear()} Talaq Associates. All rights reserved.
+            © {new Date().getFullYear()} Talaq Associates. All rights
+            reserved.
           </p>
+
         </div>
 
       </div>
