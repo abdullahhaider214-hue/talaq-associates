@@ -62,13 +62,7 @@ function AboutHome() {
                 alt="Commercial project completed using Talaq Associates lightweight concrete solutions"
               />
 
-              <div className="image-caption">
-
-                <h6>Featured Project</h6>
-
-                <p>Commercial High-Rise Development</p>
-
-              </div>
+              
 
             </div>
 
