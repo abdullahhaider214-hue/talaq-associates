@@ -93,8 +93,8 @@ function ServicesPreview() {
         </div>
 
         <div className="text-center mt-5">
-          <NavLink to="/services" className="btn btn-dark">
-            View All Services
+          <NavLink to="/products" className="btn btn-dark">
+            View All
           </NavLink>
         </div>
       </div>

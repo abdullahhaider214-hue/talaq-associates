@@ -1,41 +1,36 @@
-import './AboutIntro.css';
+import "./AboutIntro.css";
 
 function AboutIntro() {
   return (
-    <section className="about-intro-section">
+    <section className="about-intro">
+
       <div className="container">
 
-        <div className="about-intro-heading">
+        <div className="intro-content">
 
-          <p className="about-label">
+          <h2 className="about-heading">
             ABOUT TALAQ ASSOCIATES
+          </h2>
+
+          <p className="section-text">
+            Founded in <strong>2017</strong> by{" "}
+            <strong>Muhammad Naeem Saeed</strong> and{" "}
+            <strong>Mian Imran</strong>, Talaq Associates has grown into a
+            trusted provider of lightweight concrete solutions and modern
+            construction services across Pakistan.
           </p>
 
-          <h1>
-            Practical Solutions for
-            <span> Modern Construction.</span>
-          </h1>
-
-        </div>
-
-
-        <div className="about-intro-text">
-
-          <p>
-            Talaq Associates provides practical lightweight construction
-            solutions designed to support the evolving needs of modern
-            building projects.
-          </p>
-
-          <p>
-            From CLC foaming agents and lightweight blocks to technical
-            guidance and product support, we focus on providing solutions
-            that combine efficiency, reliability, and practical value.
+          <p className="section-text">
+            We specialize in premium CLC Foaming Agents, CLC Blocks,
+            Lightweight Concrete, Building Construction, and technical
+            support, helping contractors and developers achieve reliable,
+            efficient, and cost-effective construction.
           </p>
 
         </div>
 
       </div>
+
     </section>
   );
 }

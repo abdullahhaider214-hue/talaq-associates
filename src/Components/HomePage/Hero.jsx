@@ -33,10 +33,10 @@ function Hero() {
             <div className="hero-buttons">
 
               <NavLink
-                to="/products"
+                to="/projects"
                 className="hero-button"
               >
-                Our Products & Services
+                Our Work
               </NavLink>
 
             </div>
