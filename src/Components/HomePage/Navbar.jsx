@@ -84,30 +84,11 @@ function Navbar() {
               Our Work
             </NavLink>
 
-            {/* <NavLink
-              to="/contact"
-              className={({ isActive }) =>
-                isActive ? 'active' : ''
-              }
-              onClick={closeMenu}
-            >
-              Contact
-            </NavLink> */}
+           
 
           </div>
 
-          <NavLink
-            to="/contact"
-            className={({ isActive }) =>
-                isActive ? 'active' : ''
-              }
-              onClick={closeMenu}
-            className="quote-button"
-            onClick={closeMenu}
-          >
-            Get a Quote
-            <i className="fas fa-arrow-right"></i>
-          </NavLink>
+          
 
         </div>
 
