@@ -12,7 +12,7 @@ function Hero() {
           <div className="hero-content">
 
             <span className="hero-subtitle">
-              TRUSTED SINCE 2017
+              Trusted Since 2017
             </span>
 
             <h1>
@@ -24,9 +24,10 @@ function Hero() {
             </h1>
 
             <p className="hero-description">
-              Delivering complete building construction, lightweight concrete
-              solutions, CLC blocks, screed, and foaming agent systems with a
-              commitment to quality, innovation, and customer satisfaction.
+              Delivering complete building construction, CLC blocks,
+              lightweight concrete, screed, and foaming agent solutions
+              with a commitment to quality, innovation, and customer
+              satisfaction.
             </p>
 
             <div className="hero-buttons">

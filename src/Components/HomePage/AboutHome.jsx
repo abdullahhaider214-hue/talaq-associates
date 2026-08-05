@@ -1,63 +1,83 @@
-import aboutImage from '../../assets/images/Home Page/Aboutpic.jpeg';
-import './AboutHome.css';
+import { NavLink } from "react-router-dom";
+import "./AboutHome.css";
 
+import aboutImage from "../../assets/images/Home Page/about-home.jpg";
 
 function AboutHome() {
   return (
-    <section className="about-intro py-5">
+    <section className="about-home">
+
       <div className="container">
+
         <div className="row align-items-center g-5">
 
-          {/* Text - Left Side */}
+          {/* Left */}
+
           <div className="col-lg-6">
-            <span className="section-subtitle">
+
+            <span className="section-tag">
               ABOUT TALAQ ASSOCIATES
             </span>
 
             <h2 className="section-title">
-              Complete Solutions for the Lightweight Concrete Industry
+              Building Better with Lightweight Concrete
             </h2>
 
-            <p className="section-text">
-              Talaq Associates is a trusted manufacturer and supplier of
-              high-quality CLC Foaming Agents and CLC Blocks in Pakistan. We
-              are committed to delivering innovative products that help
-              customers produce lightweight, durable, and cost-effective
-              concrete.
+            <p className="about-text">
+              Since 2017, Talaq Associates has been delivering innovative
+              lightweight concrete solutions across Pakistan. We specialize in
+              premium CLC Foaming Agents, CLC Blocks, and technical support for
+              durable, efficient, and modern construction.
             </p>
 
-            <p className="section-text">
-              Our Hybrid Protein + Synthetic CLC Foaming Agent is specially
-              developed to provide excellent foam stability, uniform cell
-              structure, and consistent density for CLC blocks, CLC screed,
-              and other lightweight concrete applications.
-            </p>
+            <div className="founders-card">
 
-            <p className="section-text">
-              At Talaq Associates, we believe that customer success is our
-              success. We provide premium-quality products, technical
-              guidance, product support, and practical solutions to help our
-              customers achieve the best possible results.
-            </p>
+              <small>Founders</small>
 
-            <a href="/about" className="btn btn-dark mt-3">
-              Learn More About Us
-            </a>
+              <h4>
+                Muhammad Naeem Saeed
+                <span>&</span>
+                Mian Imran
+              </h4>
+
+            </div>
+
+            <NavLink
+              to="/about"
+              className="about-btn"
+            >
+              Learn More
+            </NavLink>
+
           </div>
 
-          {/* Image - Right Side */}
+          {/* Right */}
+
           <div className="col-lg-6">
-            <div className="about-image-wrapper">
+
+            <div className="about-image">
+
               <img
                 src={aboutImage}
-                alt="Talaq Associates lightweight concrete solutions"
-                className="img-fluid about-image"
+                alt="Commercial project completed using Talaq Associates lightweight concrete solutions"
               />
+
+              <div className="image-caption">
+
+                <h6>Featured Project</h6>
+
+                <p>Commercial High-Rise Development</p>
+
+              </div>
+
             </div>
+
           </div>
 
         </div>
+
       </div>
+
     </section>
   );
 }
