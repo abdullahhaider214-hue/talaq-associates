@@ -70,7 +70,7 @@ function ServicesPreview() {
           {services.map((service, index) => (
             <div className="col-md-6 col-lg-4" key={index}>
               <NavLink
-                to="/services"
+                to="/products"
                 className="service-card-link"
               >
                 <div
