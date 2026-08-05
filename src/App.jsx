@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import TopBar from './Components/HomePage/TopBar';
 import Navbar from './Components/HomePage/Navbar';
 import Footer from './Components/HomePage/Footer';
+import FloatingSocials from "./Components/Shared/FloatingSocials";
 
 import Home from './Pages/Home';
 import About from './Pages/About';
@@ -15,6 +16,8 @@ function App() {
     <BrowserRouter>
       <TopBar />
       <Navbar />
+
+      <FloatingSocials />
 
       <Routes>
         <Route path="/" element={<Home />} />

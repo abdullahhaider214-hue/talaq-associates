@@ -1,53 +1,51 @@
-import { NavLink } from 'react-router-dom';
-import heroImage from '../../assets/images/Home Page/Hero1.jpeg';
-import './Hero.css';
+import { NavLink } from "react-router-dom";
+import "./Hero.css";
 
 function Hero() {
   return (
-    <section
-      className="hero-section"
-      style={{ backgroundImage: `url(${heroImage})` }}
-    >
+    <section className="hero-section">
+
       <div className="hero-overlay">
+
         <div className="container">
+
           <div className="hero-content">
 
-            <p className="hero-subtitle">
-              LIGHTWEIGHT CONCRETE SOLUTIONS
-            </p>
+            <span className="hero-subtitle">
+              TRUSTED SINCE 2017
+            </span>
 
             <h1>
-              Building a Stronger Future
+              Lightweight Concrete
+              <br />
+              & Construction
+              <br />
+              Solutions
             </h1>
 
             <p className="hero-description">
-              High-quality CLC foaming agents, CLC blocks, and lightweight
-              concrete solutions for modern construction.
+              Delivering complete building construction, lightweight concrete
+              solutions, CLC blocks, screed, and foaming agent systems with a
+              commitment to quality, innovation, and customer satisfaction.
             </p>
 
             <div className="hero-buttons">
 
               <NavLink
                 to="/products"
-                className="hero-button hero-button-primary"
+                className="hero-button"
               >
-                Explore Our Services
-                <i className="fas fa-arrow-right"></i>
-              </NavLink>
-
-              <NavLink
-                to="/projects"
-                className="hero-button hero-button-secondary"
-              >
-                View Our Work
-                <i className="fas fa-arrow-right"></i>
+                Our Products & Services
               </NavLink>
 
             </div>
 
           </div>
+
         </div>
+
       </div>
+
     </section>
   );
 }

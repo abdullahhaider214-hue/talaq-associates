@@ -1,232 +1,275 @@
-/* ================================
+/* ==========================================
    HERO SECTION
-================================ */
+========================================== */
 
 .hero-section {
-  position: relative;
 
-  min-height: 680px;
+    position: relative;
 
-  display: flex;
-  align-items: center;
+    min-height: 92vh;
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, .68),
+            rgba(0, 0, 0, .45)
+        ),
+        url("../../assets/images/Home Page/Hero1.jpeg");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
 }
 
 
-/* ================================
-   DARK OVERLAY
-================================ */
+/* ==========================================
+   HERO OVERLAY
+========================================== */
 
 .hero-overlay {
-  width: 100%;
-  min-height: 680px;
 
-  display: flex;
-  align-items: center;
+    width: 100%;
+    min-height: 92vh;
 
-  background:
-    linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.72) 0%,
-      rgba(0, 0, 0, 0.52) 45%,
-      rgba(0, 0, 0, 0.20) 100%
-    );
+    display: flex;
+    align-items: center;
+
 }
 
 
-/* ================================
+/* ==========================================
    HERO CONTENT
-================================ */
+========================================== */
 
 .hero-content {
-  max-width: 700px;
 
-  padding: 100px 30px;
+    max-width: 720px;
 
-  color: #ffffff;
+    color: #ffffff;
+
+    padding: 120px 20px;
+
 }
 
 
-/* ================================
+/* ==========================================
    SUBTITLE
-================================ */
+========================================== */
 
 .hero-subtitle {
-  margin: 0 0 18px;
 
-  color: #f4a300;
+    display: inline-block;
 
-  font-size: 14px;
-  font-weight: 700;
+    margin-bottom: 22px;
 
-  letter-spacing: 2px;
+    color: #f4a300;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
 }
 
 
-/* ================================
+/* ==========================================
    MAIN HEADING
-================================ */
+========================================== */
 
 .hero-content h1 {
-  max-width: 700px;
 
-  margin: 0 0 24px;
+    margin-bottom: 28px;
 
-  color: #ffffff;
+    color: #ffffff;
 
-  font-size: clamp(44px, 6vw, 76px);
-  line-height: 1.08;
-  font-weight: 700;
+    font-size: clamp(48px, 6vw, 76px);
+
+    line-height: 1.08;
+
+    font-weight: 700;
+
 }
 
 
-/* ================================
+/* ==========================================
    DESCRIPTION
-================================ */
+========================================== */
 
 .hero-description {
-  max-width: 560px;
 
-  margin: 0 0 34px;
+    max-width: 620px;
 
-  color: #ffffff;
+    margin-bottom: 40px;
 
-  font-size: 18px;
-  line-height: 1.7;
+    color: rgba(255,255,255,.92);
+
+    font-size: 18px;
+
+    line-height: 1.9;
+
 }
 
 
-/* ================================
-   HERO BUTTONS
-================================ */
+/* ==========================================
+   BUTTONS
+========================================== */
 
-.hero-buttons {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
+.hero-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
 }
 
 
-/* General Button */
+/* ==========================================
+   BUTTON
+========================================== */
 
-.hero-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+.hero-button{
 
-  padding: 15px 24px;
+    display:inline-flex;
 
-  color: #ffffff;
+    justify-content:center;
 
-  text-decoration: none;
+    align-items:center;
 
-  font-size: 15px;
-  font-weight: 600;
+    padding:16px 34px;
 
-  transition:
-    background-color 0.3s ease,
-    border-color 0.3s ease,
-    transform 0.3s ease;
+    background:#f4a300;
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    border-radius:6px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:all .3s ease;
+
+}
+
+.hero-button:hover{
+
+    background:#d98d00;
+
+    color:#ffffff;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 25px rgba(244,163,0,.35);
+
 }
 
 
-/* Primary Button */
+/* ==========================================
+   LARGE SCREENS
+========================================== */
 
-.hero-button-primary {
-  background-color: #f4a300;
-  border: 1px solid #f4a300;
+@media (min-width:1400px){
+
+.hero-content{
+
+max-width:760px;
+
 }
 
-.hero-button-primary:hover {
-  background-color: #d98f00;
-  border-color: #d98f00;
-  color: #ffffff;
-
-  transform: translateY(-2px);
-}
-
-
-/* Secondary Button */
-
-.hero-button-secondary {
-  background-color: transparent;
-  border: 1px solid #f4a300;
-}
-
-.hero-button-secondary:hover {
-  background-color: #f4a300;
-  color: #ffffff;
-
-  transform: translateY(-2px);
 }
 
 
-/* ================================
+/* ==========================================
    TABLET
-================================ */
+========================================== */
 
-@media (max-width: 1199px) {
+@media (max-width:991px){
 
-  .hero-section,
-  .hero-overlay {
-    min-height: 620px;
-  }
+.hero-section,
+.hero-overlay{
 
-  .hero-content {
-    padding: 80px 24px;
-  }
+min-height:85vh;
+
+}
+
+.hero-content{
+
+padding:100px 15px;
+
+}
+
+.hero-content h1{
+
+font-size:56px;
+
+}
+
 }
 
 
-/* ================================
+/* ==========================================
    MOBILE
-================================ */
+========================================== */
 
-@media (max-width: 767px) {
+@media (max-width:768px){
 
-  .hero-section,
-  .hero-overlay {
-    min-height: 650px;
-  }
+.hero-section,
+.hero-overlay{
 
-  .hero-overlay {
-    background:
-      linear-gradient(
-        90deg,
-        rgba(0, 0, 0, 0.72),
-        rgba(0, 0, 0, 0.40)
-      );
-  }
+min-height:80vh;
 
-  .hero-content {
-    padding: 70px 16px;
-  }
+}
 
-  .hero-subtitle {
-    font-size: 12px;
-    letter-spacing: 1.5px;
-  }
+.hero-content{
 
-  .hero-content h1 {
-    font-size: 42px;
-  }
+padding:80px 10px;
 
-  .hero-description {
-    font-size: 16px;
-    line-height: 1.6;
-  }
+}
 
-  .hero-buttons {
-    flex-direction: column;
-    align-items: stretch;
-  }
+.hero-subtitle{
 
-  .hero-button {
-    width: 100%;
-  }
+font-size:13px;
+
+letter-spacing:2px;
+
+}
+
+.hero-content h1{
+
+font-size:40px;
+
+}
+
+.hero-description{
+
+font-size:16px;
+
+line-height:1.7;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+align-items:stretch;
+
+}
+
+.hero-button{
+
+width:100%;
+
+}
+
 }

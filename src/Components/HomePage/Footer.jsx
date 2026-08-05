@@ -10,7 +10,7 @@ function Footer() {
 
           {/* Company */}
 
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-5 col-md-6">
 
             <h3 className="footer-logo">
               Talaq Associates
@@ -28,10 +28,9 @@ function Footer() {
 
           </div>
 
-
           {/* Quick Links */}
 
-          <div className="col-lg-2 col-md-6">
+          <div className="col-lg-3 col-md-6">
 
             <h4 className="footer-heading">
               Quick Links
@@ -53,10 +52,9 @@ function Footer() {
 
           </div>
 
-
           {/* Contact */}
 
-          <div className="col-lg-3 col-md-6">
+          <div className="col-lg-4 col-md-6">
 
             <h4 className="footer-heading">
               Contact
@@ -66,73 +64,26 @@ function Footer() {
 
               <p>
                 <i className="fas fa-phone"></i>
-
                 <span>
                   0322-6060503
                   <br />
                   0306-5429035
                 </span>
-
               </p>
 
               <p>
-
                 <i className="fas fa-envelope"></i>
-
                 <span>
                   talaqassociate@gmail.com
                 </span>
-
               </p>
 
               <p>
-
                 <i className="fas fa-location-dot"></i>
-
                 <span>
                   Lahore, Pakistan
                 </span>
-
               </p>
-
-            </div>
-
-          </div>
-
-
-          {/* Connect With Us */}
-
-          <div className="col-lg-3 col-md-6">
-
-            <h4 className="footer-heading">
-              Connect With Us
-            </h4>
-
-            <div className="footer-social">
-
-              <a
-                href="https://www.facebook.com/share/1GG6CM48Ye/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-link"
-              >
-                <i className="fab fa-facebook-f"></i>
-
-                <span>Facebook</span>
-
-              </a>
-
-              <a
-                href="https://wa.me/923226060503"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-link whatsapp"
-              >
-                <i className="fab fa-whatsapp"></i>
-
-                <span>WhatsApp</span>
-
-              </a>
 
             </div>
 
@@ -140,12 +91,10 @@ function Footer() {
 
         </div>
 
-
         <div className="footer-bottom">
 
           <p>
-            © {new Date().getFullYear()} Talaq Associates.
-            All Rights Reserved.
+            © {new Date().getFullYear()} Talaq Associates. All Rights Reserved.
           </p>
 
         </div>

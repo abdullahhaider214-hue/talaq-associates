@@ -1,0 +1,163 @@
+/* ================================
+   FLOATING SOCIAL BUTTONS
+================================ */
+
+.floating-socials{
+    position:fixed;
+    right:24px;
+    bottom:24px;
+
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+
+    z-index:9999;
+}
+
+
+/* ================================
+   BUTTON
+================================ */
+
+.floating-btn{
+
+    width:56px;
+    height:56px;
+
+    border-radius:50px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    overflow:hidden;
+
+    transition:.35s ease;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.22);
+
+}
+
+.floating-btn i{
+
+    font-size:26px;
+
+    flex-shrink:0;
+
+}
+
+.floating-btn span{
+
+    width:0;
+
+    overflow:hidden;
+
+    white-space:nowrap;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+
+/* ================================
+   WHATSAPP
+================================ */
+
+.whatsapp{
+
+    background:#25D366;
+
+}
+
+
+/* ================================
+   FACEBOOK
+================================ */
+
+.facebook{
+
+    background:#1877F2;
+
+}
+
+
+/* ================================
+   HOVER
+================================ */
+
+.floating-btn:hover{
+
+    width:175px;
+
+    justify-content:flex-start;
+
+    padding-left:18px;
+
+}
+
+.floating-btn:hover span{
+
+    width:auto;
+
+    margin-left:14px;
+
+}
+
+.floating-btn:hover{
+
+    color:#fff;
+
+    transform:translateY(-4px);
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media(max-width:768px){
+
+.floating-socials{
+
+right:16px;
+bottom:16px;
+
+}
+
+.floating-btn{
+
+width:52px;
+height:52px;
+
+}
+
+.floating-btn i{
+
+font-size:23px;
+
+}
+
+.floating-btn:hover{
+
+width:52px;
+padding-left:0;
+justify-content:center;
+
+}
+
+.floating-btn:hover span{
+
+display:none;
+
+}
+
+}
