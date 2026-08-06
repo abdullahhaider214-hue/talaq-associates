@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./ProjectGallery.css";
 
 import P1 from "../../assets/images/Projects/P1.jpg";
@@ -23,6 +23,9 @@ function ProjectGallery() {
 
   const [selectedIndex, setSelectedIndex] = useState(null);
 
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
+
   const openImage = (index) => {
     setSelectedIndex(index);
   };
@@ -46,6 +49,76 @@ function ProjectGallery() {
       prev === 0 ? images.length - 1 : prev - 1
     );
   };
+
+
+  const handleTouchStart = (e) => {
+
+  touchStartX.current = e.changedTouches[0].screenX;
+
+};
+
+const handleTouchEnd = (e) => {
+
+  touchEndX.current = e.changedTouches[0].screenX;
+
+  const distance = touchStartX.current - touchEndX.current;
+
+  if (Math.abs(distance) < 50) return;
+
+  if (distance > 0) {
+
+    setSelectedIndex((prev) =>
+      prev === images.length - 1 ? 0 : prev + 1
+    );
+
+  } else {
+
+    setSelectedIndex((prev) =>
+      prev === 0 ? images.length - 1 : prev - 1
+    );
+
+  }
+
+};
+
+
+  useEffect(() => {
+
+  const handleKeyDown = (e) => {
+
+    if (selectedIndex === null) return;
+
+    if (e.key === "ArrowRight") {
+
+      setSelectedIndex((prev) =>
+        prev === images.length - 1 ? 0 : prev + 1
+      );
+
+    }
+
+    if (e.key === "ArrowLeft") {
+
+      setSelectedIndex((prev) =>
+        prev === 0 ? images.length - 1 : prev - 1
+      );
+
+    }
+
+    if (e.key === "Escape") {
+
+      closeImage();
+
+    }
+
+  };
+
+  window.addEventListener("keydown", handleKeyDown);
+
+  return () => {
+    window.removeEventListener("keydown", handleKeyDown);
+  };
+
+}, [selectedIndex]);
 
   return (
     <section className="project-gallery">
@@ -113,7 +186,16 @@ function ProjectGallery() {
               src={images[selectedIndex]}
               alt={`Project ${selectedIndex + 1}`}
               onClick={(e) => e.stopPropagation()}
+              onTouchStart={handleTouchStart}
+              onTouchEnd={handleTouchEnd}
             />
+
+            <div
+              className="image-counter"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {selectedIndex + 1} / {images.length}
+            </div>
 
             <button
               className="next-btn"
