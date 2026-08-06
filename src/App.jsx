@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import TopBar from './Components/HomePage/TopBar';
+import ScrollToTop from "./Components/Shared/ScrollToTop";
 import Navbar from './Components/HomePage/Navbar';
 import Footer from './Components/HomePage/Footer';
 import FloatingSocials from "./Components/Shared/FloatingSocials";
@@ -13,6 +14,7 @@ import Projects from './Pages/Projects';
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <TopBar />
       <Navbar />
 
