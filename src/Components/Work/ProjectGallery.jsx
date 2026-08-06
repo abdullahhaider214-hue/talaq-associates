@@ -9,7 +9,6 @@ import P5 from "../../assets/images/Projects/P5.jpg";
 import P6 from "../../assets/images/Projects/P6.jpg";
 import P7 from "../../assets/images/Projects/P7.jpg";
 
-
 function ProjectGallery() {
 
   const images = [
@@ -19,19 +18,39 @@ function ProjectGallery() {
     P4,
     P5,
     P6,
-    P7
+    P7,
   ];
 
+  const [selectedIndex, setSelectedIndex] = useState(null);
 
-  const [selectedImage, setSelectedImage] = useState(null);
+  const openImage = (index) => {
+    setSelectedIndex(index);
+  };
 
+  const closeImage = () => {
+    setSelectedIndex(null);
+  };
+
+  const nextImage = (e) => {
+    e.stopPropagation();
+
+    setSelectedIndex((prev) =>
+      prev === images.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const prevImage = (e) => {
+    e.stopPropagation();
+
+    setSelectedIndex((prev) =>
+      prev === 0 ? images.length - 1 : prev - 1
+    );
+  };
 
   return (
-
     <section className="project-gallery">
 
       <div className="container">
-
 
         {/* Heading */}
 
@@ -43,73 +62,74 @@ function ProjectGallery() {
 
         </div>
 
-
-
         {/* Gallery */}
 
         <div className="gallery-grid">
-
 
           {images.map((image, index) => (
 
             <div
               className="gallery-item"
               key={index}
-              onClick={() => setSelectedImage(image)}
+              onClick={() => openImage(index)}
             >
 
               <img
                 src={image}
                 alt={`Talaq Associates Project ${index + 1}`}
+                loading="lazy"
               />
 
             </div>
 
           ))}
 
-
         </div>
-
-
 
         {/* Lightbox */}
 
-        {selectedImage && (
+        {selectedIndex !== null && (
 
           <div
             className="image-modal"
-            onClick={() => setSelectedImage(null)}
+            onClick={closeImage}
           >
-
 
             <button
               className="close-btn"
-              onClick={() => setSelectedImage(null)}
+              onClick={closeImage}
             >
               &times;
             </button>
 
-
+            <button
+              className="prev-btn"
+              onClick={prevImage}
+            >
+              &#10094;
+            </button>
 
             <img
-              src={selectedImage}
-              alt="Full Size Project"
+              src={images[selectedIndex]}
+              alt={`Project ${selectedIndex + 1}`}
               onClick={(e) => e.stopPropagation()}
             />
 
+            <button
+              className="next-btn"
+              onClick={nextImage}
+            >
+              &#10095;
+            </button>
 
           </div>
 
         )}
 
-
       </div>
 
     </section>
-
   );
-
 }
-
 
 export default ProjectGallery;
