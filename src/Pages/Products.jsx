@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet-async";
+
 import ProductsIntro from "../Components/ProductPage/ProductsIntro";
 import ProductCard from "../Components/ProductPage/ProductCard";
 import ServicesSection from "../Components/ProductPage/ServicesSection";
@@ -10,7 +12,36 @@ import clcScreed from "../assets/images/services/clc-screed.jpg";
 
 function Products() {
   return (
-    <main>
+    <>
+  <Helmet>
+
+    <title>
+      CLC Blocks, Foaming Agent & Building Construction | Talaq Associates
+    </title>
+
+    <meta
+      name="description"
+      content="Explore Talaq Associates' range of CLC Blocks, CLC Foaming Agent, Lightweight Concrete, CLC Screed, Building Construction, and technical support services for modern construction projects in Pakistan."
+    />
+
+    <meta
+      name="keywords"
+      content="CLC Blocks Pakistan, CLC Foaming Agent, Lightweight Concrete, CLC Screed, Building Construction, Construction Materials Pakistan"
+    />
+
+    <meta
+      property="og:title"
+      content="CLC Blocks & Construction Products | Talaq Associates"
+    />
+
+    <meta
+      property="og:description"
+      content="Premium CLC Blocks, Foaming Agent, Lightweight Concrete and Building Construction services across Pakistan."
+    />
+
+  </Helmet>
+
+  <main>
 
       <ProductsIntro />
 
@@ -71,8 +102,11 @@ function Products() {
       <ServicesSection />
 
       <ClosingStatement />
+    
+  </main>
+</>
 
-    </main>
+   
   );
 }
 
